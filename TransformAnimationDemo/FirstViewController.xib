@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="TransformAnimationDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonInvert" destination="8x9-Uj-hD3" id="cY7-f2-6z6"/>
+                <outlet property="buttonRotate" destination="T4z-5u-QpI" id="SGQ-Xx-yKq"/>
+                <outlet property="buttonScale" destination="gcl-oW-LED" id="9Nm-q0-uLt"/>
+                <outlet property="buttonTranatate" destination="wMr-QH-Wbw" id="daN-Uj-L6x"/>
+                <outlet property="redView" destination="oPo-rs-tRT" id="9oF-AG-xBX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-QH-Wbw">
+                    <rect key="frame" x="20" y="617" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.67586854799999996" green="0.29758909109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fTn-UP-mF6"/>
+                        <constraint firstAttribute="width" constant="46" id="wzw-XP-r11"/>
+                    </constraints>
+                    <state key="normal" title="平移">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPo-rs-tRT">
+                    <rect key="frame" x="162" y="308" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.25712870170000002" blue="0.098379859969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="RgU-p4-8w2"/>
+                        <constraint firstAttribute="width" constant="50" id="p8z-XM-MMZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4z-5u-QpI">
+                    <rect key="frame" x="86" y="617" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.67586854799999996" green="0.29758909109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="eY9-q2-rjB"/>
+                        <constraint firstAttribute="height" constant="30" id="upK-9M-meC"/>
+                    </constraints>
+                    <state key="normal" title="旋转">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-oW-LED">
+                    <rect key="frame" x="152" y="617" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.67586854799999996" green="0.29758909109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Gat-MB-EpP"/>
+                        <constraint firstAttribute="width" constant="46" id="w6h-sm-eEo"/>
+                    </constraints>
+                    <state key="normal" title="缩放">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-Uj-hD3">
+                    <rect key="frame" x="218" y="617" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.67586854799999996" green="0.29758909109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="20h-Ed-pTJ"/>
+                        <constraint firstAttribute="height" constant="30" id="84C-kh-UBq"/>
+                    </constraints>
+                    <state key="normal" title="反转">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gcl-oW-LED" secondAttribute="bottom" constant="20" id="3di-Iu-BAZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="T4z-5u-QpI" secondAttribute="bottom" constant="20" id="4uJ-mG-2ju"/>
+                <constraint firstItem="8x9-Uj-hD3" firstAttribute="leading" secondItem="gcl-oW-LED" secondAttribute="trailing" constant="20" id="D0i-rZ-2aM"/>
+                <constraint firstItem="oPo-rs-tRT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DoT-GJ-wOr"/>
+                <constraint firstItem="wMr-QH-Wbw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GoW-9g-lJO"/>
+                <constraint firstItem="T4z-5u-QpI" firstAttribute="leading" secondItem="wMr-QH-Wbw" secondAttribute="trailing" constant="20" id="KYn-za-iNh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wMr-QH-Wbw" secondAttribute="bottom" constant="20" id="ONy-ud-17O"/>
+                <constraint firstItem="gcl-oW-LED" firstAttribute="leading" secondItem="T4z-5u-QpI" secondAttribute="trailing" constant="20" id="Rob-uU-4dt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8x9-Uj-hD3" secondAttribute="bottom" constant="20" id="Sm6-Vj-Oyt"/>
+                <constraint firstItem="oPo-rs-tRT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zHG-LS-02V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -15,8 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        createTabBarController()
         return true
+    }
+    
+    func createTabBarController(){
+        var tabBarItemImage=UIImage(named: "barIcon")
+        tabBarItemImage=tabBarItemImage?.withRenderingMode(.alwaysOriginal)
+        
+        self.window=UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor=UIColor.white
+        
+        let tabBarController=UITabBarController()
+        self.window?.rootViewController=tabBarController
+        
+        let firstCtl=FirstViewController(nibName: "FirstViewController", bundle: Bundle.main)
+        let firstNavCtl=UINavigationController(rootViewController: firstCtl)
+        firstNavCtl.title="首页"
+        firstNavCtl.tabBarItem.image=tabBarItemImage
+        tabBarController.addChildViewController(firstNavCtl)
+        
+        self.window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
