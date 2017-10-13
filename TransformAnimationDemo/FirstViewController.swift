@@ -32,13 +32,16 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //CATransition 动画-平移
     @objc func caTranatate(){
         UIView.beginAnimations("caTranatate", context: nil)
         UIView.setAnimationDuration(2.0)
+        //每次都是从当前位置平移，支持链式调用
         self.redView?.transform=(self.redView?.transform.translatedBy(x: -20.0, y: -20.0))!
         UIView.commitAnimations()
     }
     
+    //CATransition 动画-旋转
     @objc func caRotate(){
         UIView.beginAnimations("caRotate", context: nil)
         UIView.setAnimationDuration(2.0)
@@ -46,6 +49,7 @@ class FirstViewController: UIViewController {
         UIView.commitAnimations()
     }
     
+    //CATransition 动画-缩放
     @objc func caScale(){
         UIView.beginAnimations("caScale", context: nil)
         UIView.setAnimationDuration(2.0)
@@ -53,6 +57,7 @@ class FirstViewController: UIViewController {
         UIView.commitAnimations()
     }
     
+    //CATransition 动画-反转到某个状态
     @objc func caInvert(){
         UIView.beginAnimations("caInvert", context: nil)
         UIView.setAnimationDuration(2.0)
